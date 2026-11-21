@@ -10,10 +10,12 @@
 </head>
 <body>
   <a href="#main-content" class="skip-link">Перейти к основному содержимому</a>
+
   <header class="site-header">
     <div class="site-header__inner">
       <a class="site-header__logo" href="index.html">PlayTable</a>
       <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
           <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="index.html">Главная</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
@@ -24,7 +26,9 @@
     </div>
   </header>
 
-  <main>
+  <!-- Единственный тег main на странице с нужным ID -->
+  <main id="main-content">
+    
     <section class="hero" id="hero">
       <div class="hero__content">
         <h1 class="hero__title">Гаджеты, которые играют по вашим правилам</h1>
@@ -90,7 +94,8 @@
       <p class="section__text">Телефон: +7 (900) 000-00-00 · Email: hello@playtable.ru · Адрес: Москва, ул. Примерная, 1</p>
       <a class="button button--ghost" href="contacts.html">Все контакты</a>
     </section>
-  <main id="main-content">
+
+  </main> <!-- Закрываем main ЗДЕСЬ, до подвала -->
 
   <footer class="site-footer">
     <p class="site-footer__text">© 2026 PlayTable. Контрольная работа №1.</p>
